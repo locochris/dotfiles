@@ -1,0 +1,45 @@
+URxvt*geometry:          80x25
+URxvt*background:        #000000
+URxvt*foreground:        #ffffff
+URxvt*inheritPixmap:     false
+URxvt*reverseVideo:  false
+URxvt*tintColor:         #dfdfdf
+URxvt*font:    xft:Terminus:antialias=false:size=10
+URxvt*scrollBar:  false
+URxvt*saveLines:  5500
+URxvt*cursorColor:  #d8d8d8
+URxvt*colorBD:  lightyellow
+URxvt*colorUL:  yellow   
+
+!colors
+!black
+URxvt*color0:         #4E4E4E
+URxvt*color8:         #7C7C7C
+!red
+URxvt*color1:         #FF6C60
+URxvt*color9:         #FFB6B0
+!green
+URxvt*color2:         #A8FF60
+URxvt*color10:        #CEFFAB
+!yellow
+URxvt*color3:         #FFFFB6
+URxvt*color11:        #FFFFCD
+!blue
+URxvt*color4:         #96CBFE
+URxvt*color12:        #96CBFE
+!magenta
+URxvt*color5:         #FF73FD
+URxvt*color13:        #FF9CFE
+!cyan
+URxvt*color6:         #C6C5FE
+URxvt*color14:        #DFDFFE
+!white
+URxvt*color7:         #EEEEEE
+URxvt*color15:        #FFFFFF
+
+Xft.antialias: 1
+Xft.hinting: -1
+Xft.rgba: rgb
+Xft.hintstyle: hintnone
+Xft.dpi: 96
+
