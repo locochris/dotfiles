@@ -1,0 +1,56 @@
+# ~/.conkyrc
+#
+double_buffer yes
+background yes
+
+use_xft yes
+xftfont Droid Sans Mono:size=9
+xftalpha 0.8
+
+update_interval 1.0
+ 
+total_run_times 0
+
+own_window yes
+own_window_type desktop 
+own_window_transparent yes
+own_window_colour hotpink
+own_window_hints undecorated,below,skip_taskbar,sticky,skip_pager
+
+minimum_size 80 5
+draw_shades yes
+draw_outline no
+draw_borders no
+stippled_borders 0
+border_margin 6
+border_width 1
+default_color white
+default_shade_color black 
+default_outline_color white
+alignment bottom_right
+gap_x 20
+gap_y 20
+no_buffers yes
+uppercase no
+
+TEXT
+${font Droid Sans:size=24}${time %H:%M:%S}${font} 
+${alignc}${font Droid Sans:size=12}${time %a,} ${time %B %e %G}${font}
+$hr
+${font StyleBats:size=12}l${font} Host :${color white} ${nodename} 
+${font StyleBats:size=12}x${font} OS   :${color white} ${sysname} ${kernel}
+${font StyleBats:size=12}k${font} Freq :${color white} ${freq}Mhz 
+${font StyleBats:size=12}p${font} Mode :${color white} ${execi 10  cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor }
+$stippled_hr
+${font StyleBats:size=12}q${font} Uptime  :${color white} $uptime ${color white}
+${font StyleBats:size=12}c${font} Battery :${color white} ${battery BAT1}
+$stippled_hr
+${font StyleBats:size=12}A${font} CPU :${color white} $cpu% $cpubar
+${font StyleBats:size=12}g${font} RAM :${color white} $memperc% $membar
+$stippled_hr
+${font StyleBats:size=12}j${font} Root : ${color white}${fs_free /} ${fs_bar /}
+${font StyleBats:size=12}j${font} NTFS : ${color white}${fs_free /mnt/ntfs} ${fs_bar /mnt/ntfs}
+${if_existing /proc/net/route wlan0}$stippled_hr
+${font StyleBats:size=12}v${font} Wi-Fi: ${alignr}${wireless_essid wlan0} (${addr wlan0})
+
+${endif}
