@@ -7,9 +7,14 @@ set hidden
 syntax on
 autocmd BufEnter * :syntax sync fromstart
 
-colorscheme ir_black 
-set guifont="Monaco:h9"
-set gfn=Monaco\ 9
+
+if has('gui_running')
+    colorscheme monokai_original
+    set gfn=Monaco:h12
+else
+    colorscheme solarized
+    set background=light
+endif
 
 set backupdir=~/.vim/sessions
 set dir=~/.vim/sessions
@@ -37,9 +42,9 @@ let g:git_branch_status_text=""
 set smarttab
 set smartindent
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 inoremap <Silent> <Tab> <C-R>=(col('.') > (matchend(getline('.'), '^\s*') + 1))?'<C-V><C-V><Tab>':'<Tab>'<CR>
 
 " Ruby
