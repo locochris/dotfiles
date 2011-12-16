@@ -34,3 +34,12 @@
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/bundle/vim-colors-irblack"]
+	path = .vim/bundle/vim-colors-irblack
+	url = https://github.com/wgibbs/vim-irblack.git
+[submodule ".vim/bundle/vim-colors-molokai"]
+	path = .vim/bundle/vim-colors-molokai
+	url = https://github.com/kazuhisya/molokai.git
+[submodule ".vim/bundle/vim-colors-monokai"]
+	path = .vim/bundle/vim-colors-monokai
+	url = https://github.com/rickharris/vim-monokai.git
