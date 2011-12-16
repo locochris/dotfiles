@@ -40,6 +40,7 @@ set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 let g:Gitv_OpenHorizontal = 1
+let g:fuzzy_ceiling = 50000
 
 set list
 set listchars=tab:▸\ ,eol:¬
