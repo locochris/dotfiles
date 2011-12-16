@@ -1,4 +1,3 @@
-alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i' 
 alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive' 
 alias ll='ls -Gal'
 
