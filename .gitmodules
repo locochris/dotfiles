@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-colors-monokai"]
 	path = .vim/bundle/vim-colors-monokai
 	url = https://github.com/rickharris/vim-monokai.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
