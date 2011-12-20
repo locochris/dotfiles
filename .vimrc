@@ -58,6 +58,7 @@ autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " HTML, ERB
 let html_no_rendering=1
+autocmd FileType html setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd BufNewFile,BufRead *.rhtml setlocal ft=eruby
 
 " JavaScript
