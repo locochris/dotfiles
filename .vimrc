@@ -11,14 +11,16 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 autocmd QuickFixCmdPost *grep* cwindow
 
 colorscheme solarized
-set background=light
+"set background=light
 
 " Silence
 set noeb vb t_vb=
 
 if has('gui_running')
-    colorscheme jellybeans
-    set gfn=Inconsolata-dz:h12
+    "colorscheme jellybeans
+    "set gfn=Inconsolata-dz:h14
+    colorscheme railscasts 
+    set gfn=Consolas:h12
 endif
 
 set backupdir=~/.vim/sessions
@@ -39,8 +41,12 @@ set laststatus=2
 set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w 
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
+set guitablabel=%N/\ %t\ %M
+
 let g:Gitv_OpenHorizontal = 1
 let g:fuzzy_ceiling = 50000
+let g:easytags_auto_highlight = 0
+let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -69,7 +75,7 @@ autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " Key mappings
-let mapleader = ","
+let mapleader = "\\"
 map <leader>n :tabnew<CR>
 map <leader>w :tabclose<CR>
 map <leader>t :FuzzyFinderTextMate<CR>
