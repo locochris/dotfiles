@@ -11,7 +11,7 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 autocmd QuickFixCmdPost *grep* cwindow
 
 colorscheme solarized
-"set background=light
+set background=light
 
 " Silence
 set noeb vb t_vb=
@@ -20,7 +20,7 @@ if has('gui_running')
     "colorscheme jellybeans
     "set gfn=Inconsolata-dz:h14
     colorscheme railscasts 
-    set gfn=Consolas:h12
+    set gfn=Monaco:h12
 endif
 
 set backupdir=~/.vim/sessions
@@ -79,6 +79,7 @@ let mapleader = "\\"
 map <leader>n :tabnew<CR>
 map <leader>w :tabclose<CR>
 map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>o :NERDTreeMirrorToggle<CR>
 map <leader>a :Ack 
 
 let i = 1
