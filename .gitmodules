@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-colors-distinguished"]
 	path = .vim/bundle/vim-colors-distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule ".vim/bundle/vim-nginx"]
+	path = .vim/bundle/vim-nginx
+	url = https://github.com/jinfield/vim-nginx.git
