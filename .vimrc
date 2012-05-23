@@ -79,12 +79,15 @@ let javascript_enable_domhtmlcss=1
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+" NERDTree-tabs
+let g:nerdtree_tabs_open_on_gui_startup=0
+
 " Key mappings
 let mapleader = "\\"
 map <leader>n :tabnew<CR>
 map <leader>w :tabclose<CR>
 map <leader>t :FuzzyFinderTextMate<CR>
-map <leader>o :NERDTreeMirrorToggle<CR>
+map <leader>o :NERDTreeTabsToggle<CR>
 map <leader>a :Ack 
 
 let i = 1
