@@ -47,7 +47,6 @@ set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 set guitablabel=%N/\ %t\ %M
 
 let g:Gitv_OpenHorizontal = 1
-let g:fuzzy_ceiling = 50000
 let g:easytags_auto_highlight = 0
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
@@ -86,8 +85,8 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 let mapleader = "\\"
 map <leader>n :tabnew<CR>
 map <leader>w :tabclose<CR>
-map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>o :NERDTreeTabsToggle<CR>
+map <leader>t :CtrlP<CR>
 map <leader>a :Ack 
 
 let i = 1
