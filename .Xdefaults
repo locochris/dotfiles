@@ -6,13 +6,22 @@ Xft.hinting:    true
 !Xft.hinting: -1
 !Xft.hintstyle:  hintnone
 
-XTerm*font:            xft:ProFont:pixelsize=11:antialias=false 
-XTerm*boldFont:        xft:ProFont:pixelsize=11:antialias=false 
+!XTerm*font:    xft:Consolas:pixelsize=13:antialias=false 
+!XTerm*font:     xft:Consolas for Powerline:pixelsize=13
+!XTerm*boldFont: xft:Consolas for Powerline:pixelsize=13
 
-URxvt*font:            xft:ProFont:pixelsize=11:antialias=false 
-URxvt*boldFont:        xft:ProFont:pixelsize=11:antialias=false 
+!URxvt*font:     xft:Consolas for Powerline:pixelsize=13
+!URxvt*boldFont: xft:Consolas for Powerline:pixelsize=13
 
-URxvt*scrollBar:      False 
+XTerm*font:     xft:Droid Sans Mono for Powerline:pixelsize=12
+XTerm*boldFont: xft:Droid Sans Mono for Powerline:pixelsize=12
+
+URxvt*font:     xft:Droid Sans Mono for Powerline:pixelsize=12
+URxvt*boldFont: xft:Droid Sans Mono for Powerline:pixelsize=12
+
+URxvt.perl-ext-common:  default,tabbed
+URxvt*scrollBar:    False 
+URxvt*letterSpace: -1
 
 !--[Colours]--!
 *background: #000000
