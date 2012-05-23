@@ -24,8 +24,9 @@ function proml {
   local        BLUE="\[\033[1;34m\]"
   local         RED="\[\033[1;31m\]"
   local       GREEN="\[\033[0;32m\]"
-  local       WHITE="\[\033[0;37m\]"
+  local       RESET="\[\033[0;m\]"
   PS1="${TITLEBAR}\
-$BLUE\u|$RED\h$BLUE:\w$GREEN\$(parse_git_branch)$RED $GREEN$ $WHITE"
+$BLUE\u|$RED\h$BLUE:\w$GREEN\$(parse_git_branch)$RED $GREEN$ $RESET"
 }
 proml
+
