@@ -10,24 +10,20 @@ autocmd BufEnter * :syntax sync fromstart
 autocmd BufReadPost fugitive://* set bufhidden=delete
 autocmd QuickFixCmdPost *grep* cwindow
 
-colorscheme solarized
-set background=dark
-"set background=light
-
 " Silence
 set noeb vb t_vb=
 
 if has('gui_running')
-  "colorscheme jellybeans
-  "set gfn=Inconsolata-dz:h14
-  colorscheme monokai 
+  colorscheme badwolf 
   if has("gui_gtk2")
-    set guifont=Monaco\ 9
+    set guifont=Inconsolata-dz\ for\ Powerline\ 9
+    "set guifont=Liberation\ Mono\ for\ Powerline\ 9
   else
     set gfn=Consolas:h12
   endif
 else
   set t_Co=256 
+  colorscheme jellybeans 
 endif
 
 set backupdir=~/.vim/sessions
@@ -55,6 +51,7 @@ let g:fuzzy_ceiling = 50000
 let g:easytags_auto_highlight = 0
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
+let g:Powerline_symbols = 'fancy'
 
 set list
 set listchars=tab:▸\ ,eol:¬
