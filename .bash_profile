@@ -2,6 +2,7 @@ alias git-sub-pull='git pull --rebase && git submodule sync && git submodule upd
 alias ll='ls -Gal'
 alias be='bundle exec'
 alias ack='ack-grep'
+alias ff='find . -name'
 
 BASH_EXTRAS_DIR=~/.bash
 
