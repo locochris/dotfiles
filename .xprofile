@@ -4,5 +4,9 @@ dropbox start &
 #xcompmgr -c &
 setxkbmap -layout "us, ru" -option "grp:alt_shift_toggle" &
 nm-applet &
+gnome-settings-daemon &
+
+~/.bin/killp xfce4-power-manager
 xfce4-power-manager &
+
 feh --bg-scale ~/.wallpaper.jpg
