@@ -1,4 +1,5 @@
 --type-add=js=.coffee
+--type-add=js=.json
 --type-add=js=.ejs
 --type-add=ruby=.erb
 --type-add=css=.sass
