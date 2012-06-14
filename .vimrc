@@ -14,16 +14,20 @@ autocmd QuickFixCmdPost *grep* cwindow
 set noeb vb t_vb=
 
 if has('gui_running')
-  colorscheme badwolf 
+  colorscheme mustang-mod
+  "colorscheme badwolf 
   if has("gui_gtk2")
-    set guifont=Inconsolata-dz\ for\ Powerline\ 9
+    "set guifont=Inconsolata-dz\ for\ Powerline\ 9
     "set guifont=Liberation\ Mono\ for\ Powerline\ 9
+    "set guifont=Consolas\ for\ Powerline\ 10
+    "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
+    set guifont=Envy\ Code\ R\ for\ Powerline\ 10
   else
     set gfn=Consolas:h12
   endif
 else
-  set t_Co=256 
-  colorscheme jellybeans 
+  set t_Co=256
+  colorscheme jellybeans
 endif
 
 set backupdir=~/.vim/sessions
