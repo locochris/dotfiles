@@ -2,5 +2,6 @@
 --type-add=js=.json
 --type-add=js=.ejs
 --type-add=ruby=.erb
+--type-add=html=.eco
 --type-add=css=.sass
 --type-add=ruby=.feature

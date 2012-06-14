@@ -14,6 +14,7 @@ source ~/.bash/prompt.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # Load RVM into a shell session *as a function*
 export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/node/bin:$PATH
 
+export EDITOR=vim
 export TERM=xterm-256color
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 complete -cf sudo
