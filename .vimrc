@@ -21,7 +21,8 @@ if has('gui_running')
     "set guifont=Liberation\ Mono\ for\ Powerline\ 9
     "set guifont=Consolas\ for\ Powerline\ 10
     "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
-    set guifont=Envy\ Code\ R\ for\ Powerline\ 10
+    "set guifont=Envy\ Code\ R\ for\ Powerline\ 10
+    set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
   else
     set gfn=Consolas:h12
   endif
