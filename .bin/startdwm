@@ -1,0 +1,7 @@
+#!/bin/sh
+
+dwm_dir=${HOME}/.dwm
+
+conky -c ${dwm_dir}/conkyrc | while read -r; do xsetroot -name "$REPLY"; done &
+
+while true; do dwm 2> ${dwm_dir}/dwm.err; done;

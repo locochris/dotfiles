@@ -1,0 +1,14 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 3
+total_run_times 0
+use_spacer none
+
+TEXT
+µ ${cpu cpu1}%  ${freq_g 1}GHz \
+Î ${mem} \
+ð ${if_existing /sys/class/power_supply/BAT0/present}${battery_percent BAT0}% ${battery_time BAT0}${else}AC${endif} \
+¤ ${if_up wlan0}${wireless_link_qual_perc wlan0}% ${endif}\
+Ê ${exec ~/.bin/mailcount.sh} \
+É ${time %b %d %H:%M}
