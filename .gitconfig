@@ -2,8 +2,13 @@
   co = checkout
   ci = commit
   rb = rebase
+  st = status
 
 [color]
   status = auto
   branch = auto
   ui = auto
+
+[user]
+  name = Vasily Mikhaylichenko
+  email = vasily.mikhaylichenko@gmail.com
