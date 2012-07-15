@@ -15,14 +15,10 @@ set noeb vb t_vb=
 
 if has('gui_running')
   colorscheme mustang-mod
-  "colorscheme badwolf 
+  let g:Powerline_symbols = 'fancy'
+
   if has("gui_gtk2")
-    "set guifont=Inconsolata-dz\ for\ Powerline\ 9
-    "set guifont=Liberation\ Mono\ for\ Powerline\ 9
-    "set guifont=Consolas\ for\ Powerline\ 10
-    "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
-    "set guifont=Envy\ Code\ R\ for\ Powerline\ 10
-    set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    set guifont=Terminus\ 9
   else
     set gfn=Consolas:h12
   endif
@@ -55,7 +51,6 @@ let g:Gitv_OpenHorizontal = 1
 let g:easytags_auto_highlight = 0
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
-let g:Powerline_symbols = 'fancy'
 
 set list
 set listchars=tab:▸\ ,eol:¬
