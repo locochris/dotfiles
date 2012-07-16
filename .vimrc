@@ -85,6 +85,9 @@ autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " NERDTree-tabs
 let g:nerdtree_tabs_open_on_gui_startup=0
 
