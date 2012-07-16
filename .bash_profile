@@ -2,13 +2,18 @@ alias git-sub-pull='git pull --rebase && git submodule sync && git submodule upd
 alias ll='ls -Gal'
 alias be='bundle exec'
 
-BASH_EXTRAS_DIR=~/.bash
+function source_recursively
+{
+  for i in $1/*; do
+    if [ -d $i ]; then
+      source_recursively $i
+    else
+      source $i
+    fi
+  done
+}
 
-for i in $BASH_EXTRAS_DIR/*.sh; do
-  source $i
-done
-
-source ~/.bash/prompt.sh
+source_recursively "$HOME/.bash"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # Load RVM into a shell session *as a function*
 export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/node/bin:$PATH
