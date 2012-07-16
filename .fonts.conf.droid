@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+<!-- Replace defaults for serif, sans-serif and monospace -->
+<alias>
+  <family>serif</family>
+  <prefer>
+   <family>Droid Serif</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>sans</family>
+  <prefer>
+   <family>Droid Sans</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>monospace</family>
+  <prefer>
+   <family>Consolas</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>Sans</family>
+  <prefer>
+   <family>Droid Sans</family>
+  </prefer>
+ </alias>
+</fontconfig>
