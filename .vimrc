@@ -14,6 +14,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 set noeb vb t_vb=
 
 if has('gui_running')
+  au GUIEnter * set lines=50 columns=120
   colorscheme mustang-mod
   let g:Powerline_symbols = 'fancy'
 
@@ -73,6 +74,7 @@ autocmd BufNewFile,BufRead *.rhtml setlocal ft=eruby
 
 " JavaScript
 let javascript_enable_domhtmlcss=1
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 " CoffeeScript
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
@@ -94,3 +96,14 @@ while i <= 9
   execute 'nnoremap <leader>' . i . ' ' . i . 'gt'
   let i = i + 1
 endwhile
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
