@@ -14,15 +14,16 @@ autocmd QuickFixCmdPost *grep* cwindow
 set noeb vb t_vb=
 
 if has('gui_running')
+  au GUIEnter * set lines=50 columns=120
   colorscheme mustang-mod
   "colorscheme badwolf 
   if has("gui_gtk2")
     "set guifont=Inconsolata-dz\ for\ Powerline\ 9
     "set guifont=Liberation\ Mono\ for\ Powerline\ 9
     "set guifont=Consolas\ for\ Powerline\ 10
-    "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
     "set guifont=Envy\ Code\ R\ for\ Powerline\ 10
-    set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    "set guifont=Ubuntu\ Mono\ for\ Powerline\ 10
   else
     set gfn=Consolas:h12
   endif
@@ -78,6 +79,7 @@ autocmd BufNewFile,BufRead *.rhtml setlocal ft=eruby
 
 " JavaScript
 let javascript_enable_domhtmlcss=1
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 " CoffeeScript
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
@@ -99,3 +101,14 @@ while i <= 9
   execute 'nnoremap <leader>' . i . ' ' . i . 'gt'
   let i = i + 1
 endwhile
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
