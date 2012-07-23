@@ -1,4 +1,4 @@
-alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive' 
+alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive'
 alias ll='ls -Gal'
 alias be='bundle exec'
 
@@ -15,10 +15,17 @@ function source_recursively
 
 source_recursively "$HOME/.bash"
 
+p() {
+    cd /projects/`ls /projects | grep $1 | head -1`
+}
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # Load RVM into a shell session *as a function*
 export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/node/bin:$PATH
 
 export EDITOR=vim
 export TERM=xterm-256color
-export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 complete -cf sudo
+
+if [ `uname` == "Linux" ]; then
+  export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+fi
