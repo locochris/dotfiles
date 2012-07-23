@@ -15,12 +15,19 @@ case $TERM in
         ;;
 esac
 
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo " ±"
+function git_dirty {
+  local git_status="`git status -unormal 2>&1`"
+  if [[ "$git_status" =~ Not\ a\ git\ repo ]]; then
+    echo "○"
+  elif [[ "$git_status" =~ nothing\ to\ commit ]]; then
+    echo "○"
+  else
+    echo "±"
+  fi
 }
 
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ on \1$(parse_git_dirty)/"
+function git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ on \1/"
 }
 
 function rvm_prompt_cmd {
@@ -34,7 +41,7 @@ function rvm_prompt_cmd {
 }
 
 function ruby_indicator {
-  rvm_prompt_cmd > /dev/null && echo ♦
+  rvm_prompt_cmd > /dev/null && echo ◊
 }
 
 function ruby_prompt {
@@ -44,5 +51,6 @@ function ruby_prompt {
 PS2='> '
 PS4='+ '
 
-export PS1="${TITLEBAR}\n$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$RESET with $RED\$(ruby_indicator) $RESET\$(ruby_prompt)\
-$GREEN\$(parse_git_branch)\n $GREEN> $RESET"
+#export PS1="${TITLEBAR}\n$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$RESET with $RED\$(ruby_indicator) $RESET\$(ruby_prompt)\
+#$GREEN\$(git_branch)\n $GREEN\$(git_dirty) $RESET"
+export PS1="${TITLEBAR}\n$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$GREEN\$(git_branch) $GREEN\$(git_dirty) $RESET"
