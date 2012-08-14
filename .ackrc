@@ -3,5 +3,6 @@
 --type-add=js=.ejs
 --type-add=ruby=.erb
 --type-add=html=.eco
+--type-add=html=.slim
 --type-add=css=.sass
 --type-add=ruby=.feature
