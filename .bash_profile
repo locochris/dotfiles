@@ -2,6 +2,14 @@ alias git-sub-pull='git pull --rebase && git submodule sync && git submodule upd
 alias ll='ls -Gal'
 alias be='bundle exec'
 
+function git-sub-rm
+{
+  git rm --cached $1
+  git config -f .git/config --remove-section submodule.$1
+  git config -f .gitmodules --remove-section submodule.$1
+  rm -rf $1
+}
+
 function source_recursively
 {
   for i in $1/*; do
