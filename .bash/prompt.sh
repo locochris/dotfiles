@@ -53,4 +53,4 @@ PS4='+ '
 
 #export PS1="${TITLEBAR}\n$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$RESET with $RED\$(ruby_indicator) $RESET\$(ruby_prompt)\
 #$GREEN\$(git_branch)\n $GREEN\$(git_dirty) $RESET"
-export PS1="${TITLEBAR}\n$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$GREEN\$(git_branch) $GREEN\$(git_dirty) $RESET"
+export PS1="${TITLEBAR}$BLUE\u$RESET at $RED\h$RESET in $BLUE\W$GREEN\$(git_branch) $GREEN\$(git_dirty) $RESET"
