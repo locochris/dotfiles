@@ -97,7 +97,8 @@ map <leader>n :tabnew<CR>
 map <leader>w :tabclose<CR>
 map <leader>o :NERDTreeTabsToggle<CR>
 map <leader>t :CtrlP<CR>
-map <leader>a :Ack 
+map <leader>a :Ack
+map <leader>b :TagbarToggle<CR>
 
 let i = 1
 while i <= 9
