@@ -1,7 +1,7 @@
-alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive'
 alias ll='ls -Gal'
 alias be='bundle exec'
 
+alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive'
 function git-sub-rm
 {
   git rm --cached $1
@@ -34,6 +34,10 @@ export EDITOR=vim
 export TERM=xterm-256color
 complete -cf sudo
 
+# Platform-specific bits
 if [ `uname` == "Linux" ]; then
   export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+elif [ `uname` == "Darwin" ]; then
+  alias mvim="open -a MacVim $1"
 fi
+
