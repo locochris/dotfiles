@@ -60,6 +60,9 @@ let g:Powerline_theme="skwp"
 let g:Powerline_colorscheme="skwp"
 let g:Powerline_symbols = 'fancy'
 
+" NERDTree-tabs
+let g:nerdtree_tabs_open_on_gui_startup=0
+
 set list
 set listchars=tab:▸\ ,eol:¬
 
@@ -90,8 +93,11 @@ autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" NERDTree-tabs
-let g:nerdtree_tabs_open_on_gui_startup=0
+" Rainbow parentheses
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+map <leader>r :RainbowParenthesesToggle<CR>
 
 " Key mappings
 let mapleader = "\\"
