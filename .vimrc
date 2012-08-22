@@ -116,3 +116,12 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+fun! v:remaps()
+  if !(has("mac") && has("gui_running"))
+    " Unmap Waldo and PeepOpen toggles
+    nnoremap <leader>f <nop>
+    nnoremap <leader>p <nop>
+  endif
+endfunction
+
+autocmd BufEnter * call v:remaps()
