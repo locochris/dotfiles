@@ -15,21 +15,20 @@ set noeb vb t_vb=
 
 if has('gui_running')
   au GUIEnter * set lines=50 columns=120
-  colorscheme mustang-mod
-  "colorscheme badwolf 
+  colorscheme molokai
   if has("gui_gtk2")
-    "set guifont=Inconsolata-dz\ for\ Powerline\ 9
-    "set guifont=Liberation\ Mono\ for\ Powerline\ 9
-    "set guifont=Consolas\ for\ Powerline\ 10
     set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
-    "set guifont=Envy\ Code\ R\ for\ Powerline\ 10
-    "set guifont=Ubuntu\ Mono\ for\ Powerline\ 10
   else
-    set gfn=Consolas:h12
+    set gfn=Monaco:h12
+    colorscheme Tomorrow-Night
+    "set noantialias
   endif
 else
   set t_Co=256
-  colorscheme jellybeans
+  set background=light
+  colorscheme solarized
+  "colorscheme Tomorrow-Night
+  "colorscheme miromiro
 endif
 
 set backupdir=~/.vim/sessions
@@ -47,7 +46,7 @@ set number
 set cmdheight=2
 
 set laststatus=2
-set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w 
+set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 set guitablabel=%N/\ %t\ %M
@@ -56,6 +55,9 @@ let g:Gitv_OpenHorizontal = 1
 let g:easytags_auto_highlight = 0
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
+
+let g:Powerline_theme="skwp"
+let g:Powerline_colorscheme="skwp"
 let g:Powerline_symbols = 'fancy'
 
 set list
