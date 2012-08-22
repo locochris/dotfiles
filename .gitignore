@@ -1,3 +1,4 @@
 .bin/pwsafe
 .vim/.netrwhist
+.vim/sessions/*.swp
 
