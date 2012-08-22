@@ -90,4 +90,4 @@
 	url = git://github.com/milkypostman/vim-togglelist.git
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
-	url = git://github.com/pearofducks/vim-powerline.git
+	url = git://github.com/Lokaltog/vim-powerline.git
