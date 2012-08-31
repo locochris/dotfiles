@@ -10,6 +10,11 @@ function git-sub-rm
   rm -rf $1
 }
 
+function git-resolve
+{
+  vim `git st -s | grep ^UU | awk '{ print $2 }'`
+}
+
 function source_recursively
 {
   for i in $1/*; do
