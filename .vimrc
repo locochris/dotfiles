@@ -19,16 +19,17 @@ if has('gui_running')
   if has("gui_gtk2")
     set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
   else
-    set gfn=Monaco:h12
-    colorscheme Tomorrow-Night
-    "set noantialias
+    set gfn=Menlo:h12
+    colorscheme Tomorrow
   endif
 else
   set t_Co=256
+
+  " Solarized setup
   set background=light
   colorscheme solarized
-  "colorscheme Tomorrow-Night
-  "colorscheme miromiro
+  let g:Powerline_theme="skwp"
+  let g:Powerline_colorscheme="skwp"
 endif
 
 set backupdir=~/.vim/sessions
@@ -56,8 +57,6 @@ let g:easytags_auto_highlight = 0
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
-let g:Powerline_theme="skwp"
-let g:Powerline_colorscheme="skwp"
 let g:Powerline_symbols = 'fancy'
 
 " NERDTree-tabs
