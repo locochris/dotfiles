@@ -132,3 +132,6 @@ fun! v:remaps()
 endfunction
 
 autocmd BufEnter * call v:remaps()
+
+" fish work-around
+set shell=/bin/bash
