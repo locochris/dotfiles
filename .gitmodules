@@ -88,9 +88,6 @@
 [submodule ".vim/bundle/vim-togglelist"]
 	path = .vim/bundle/vim-togglelist
 	url = git://github.com/milkypostman/vim-togglelist.git
-[submodule ".vim/bundle/vim-powerline"]
-	path = .vim/bundle/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule ".vim/bundle/vim-rainbow-parentheses"]
 	path = .vim/bundle/vim-rainbow-parentheses
 	url = git://github.com/kien/rainbow_parentheses.vim.git
@@ -103,3 +100,6 @@
 [submodule ".vim/bundle/vim-endwise"]
 	path = .vim/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
+[submodule ".vim/bundle/vim-powerline"]
+	path = .vim/bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
