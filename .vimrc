@@ -20,16 +20,19 @@ if has('gui_running')
     set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
   else
     set gfn=Menlo:h12
-    colorscheme Tomorrow
+    colorscheme Tomorrow-Night-Bright
   endif
 else
   set t_Co=256
 
+  colorscheme Tomorrow-Night-Bright
+  "
   " Solarized setup
-  set background=light
-  colorscheme solarized
-  let g:Powerline_theme="skwp"
-  let g:Powerline_colorscheme="skwp"
+  "set background=light
+  "set background=dark
+  "colorscheme solarized
+  "let g:Powerline_theme="skwp"
+  "let g:Powerline_colorscheme="skwp"
 endif
 
 set backupdir=~/.vim/sessions
@@ -45,6 +48,7 @@ set gcr=a:blinkon0
 
 set number
 set cmdheight=2
+set relativenumber
 
 set laststatus=2
 set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w
