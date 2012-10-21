@@ -5,6 +5,7 @@
 --type-add=html=.eco
 --type-add=html=.slim
 --type-add=css=.sass
+--type-add=css=.scss
 --type-add=ruby=.rake
 --type-add=ruby=.feature
 --type-add=shell=.fish
