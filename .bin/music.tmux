@@ -1,8 +1,16 @@
 #!/bin/bash
 
-now_playing=$(ncmpcpp --now-playing '{%a - %t}')
-if [ "$now_playing" = "" ]; then
-  echo "⮃"
+spacer="⮃"
+
+if [ ps -ax | grep [m]pd ]; then
+  now_playing=$(ncmpcpp --now-playing '{%a - %t}')
+
+  if [ "$now_playing" != "" ]; then
+    echo "#[fg=colour6]⮂#[bg=colour6,fg=colour0] ♫  $now_playing #[fg=colour0]⮂"
+  else
+    echo "$spacer"
+  fi
 else
-  echo "#[fg=colour6]⮂#[bg=colour6,fg=colour0] ♫  $now_playing #[fg=colour0]⮂"
+  echo "$spacer"
 fi
+
