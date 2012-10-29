@@ -2,7 +2,7 @@
 
 spacer="⮃"
 
-if [ ps -ax | grep [m]pd ]; then
+if ps ax | grep -q "[m]pd"; then
   now_playing=$(ncmpcpp --now-playing '{%a - %t}')
 
   if [ "$now_playing" != "" ]; then
