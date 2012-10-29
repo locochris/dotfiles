@@ -25,7 +25,7 @@ if has('gui_running')
 else
   set t_Co=256
 
-  colorscheme Tomorrow-Night-Bright
+  colorscheme base16-mocha
   "
   " Solarized setup
   "set background=light
