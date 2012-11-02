@@ -1,0 +1,12 @@
+#!/bin/sh
+
+case $1 in
+  off)
+    launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+    killall NotificationCenter
+    ;;
+  on)
+    launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+    open /System/Library/CoreServices/NotificationCenter.app
+    ;;
+esac

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+case $1 in
+  off)
+    sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+    killall SystemUIServer
+    ;;
+  on)
+    sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+    killall SystemUIServer
+    ;;
+esac
