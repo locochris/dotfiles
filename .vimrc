@@ -19,20 +19,13 @@ if has('gui_running')
   if has("gui_gtk2")
     set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
   else
-    set gfn=PragmataPro:h12
-    colorscheme Tomorrow-Night-Bright
+    set gfn=PragmataPro:h13
+    colorscheme birds_of_paradise
   endif
 else
   set t_Co=256
 
   colorscheme base16-mocha
-  "
-  " Solarized setup
-  "set background=light
-  "set background=dark
-  "colorscheme solarized
-  "let g:Powerline_theme="skwp"
-  "let g:Powerline_colorscheme="skwp"
 endif
 
 set backupdir=~/.vim/sessions
