@@ -43,9 +43,6 @@
 [submodule ".vim/bundle/vim-colors-badwolf"]
 	path = .vim/bundle/vim-colors-badwolf
 	url = git://github.com/sjl/badwolf.git
-[submodule ".vim/bundle/vim-easytags"]
-	path = .vim/bundle/vim-easytags
-	url = git://github.com/xolox/vim-easytags.git
 [submodule ".vim/bundle/vim-colors-railscasts"]
 	path = .vim/bundle/vim-colors-railscasts
 	url = https://github.com/jpo/vim-railscasts-theme.git
@@ -103,3 +100,6 @@
 [submodule ".vim/bundle/vim-css-color"]
 	path = .vim/bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
+[submodule ".vim/bundle/vim-tag-highlight"]
+	path = .vim/bundle/vim-tag-highlight
+	url = git://github.com/BenBergman/TagHighlight.git
