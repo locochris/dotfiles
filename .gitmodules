@@ -91,9 +91,6 @@
 [submodule ".vim/bundle/vim-rainbow-parentheses"]
 	path = .vim/bundle/vim-rainbow-parentheses
 	url = git://github.com/kien/rainbow_parentheses.vim.git
-[submodule ".vim/bundle/vim--pasta"]
-	path = .vim/bundle/vim--pasta
-	url = git://github.com/sickill/vim-pasta.git
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
