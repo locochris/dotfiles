@@ -2,4 +2,5 @@
 .bin/pwsafe
 .vim/.netrwhist
 .vim/sessions/*.swp
+.DS_Store
 
