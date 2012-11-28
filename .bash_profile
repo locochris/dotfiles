@@ -1,4 +1,5 @@
 alias ll='ls -Gal'
+alias l='ll'
 alias be='bundle exec'
 
 alias git-sub-pull='git pull --rebase && git submodule sync && git submodule update -i --recursive'
