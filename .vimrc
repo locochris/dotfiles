@@ -39,7 +39,7 @@ set guioptions-=T
 set completeopt-=preview
 set gcr=a:blinkon0
 
-set cmdheight=2
+"set cmdheight=2
 
 set laststatus=2
 set statusline=[%l,%c\ %P%M]\ %f\ %r%h%w
